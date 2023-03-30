@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>
+    <title>growfield - A tiny, dependency-free JavaScript module for making textarea elements grow with their content.</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+    <style type="text/css">
+      body {
+        background-color: #e9ecef;
+      }
+
+      a {
+        color: #5185b3;
+        text-decoration: underline;
+      }
+
+      .github-fork-ribbon:before {
+        background-color: #5185b3;
+      }
+
+      footer {
+        padding: 4rem 0;
+      }
+
+      .container {
+        text-align: center;
+      }
+
+      #main .container {
+        background-color: #ffffff;
+        padding: 4rem 2rem;
+      }
+
+      textarea {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding: .5rem;
+        width: 400px;
+      }
+    </style>
+    <script type="text/javascript" src="dist/growfield.min.js"></script>
+    <script type="text/javascript">
+      window.addEventListener('load', function () {
+        growfield()
+      })
+    </script>
+  </head>
+  <body>
+    <a class="github-fork-ribbon" href="https://github.com/kodie/growfield" data-ribbon="Check me out on GitHub" title="Check me out on GitHub">Check me out on GitHub</a>
+
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">growfield</h1>
+        <p class="lead">A tiny, dependency-free JavaScript module for making textarea elements grow with their content.</p>
+        <p><a href="https://github.com/kodie/growfield" target="_blank">https://github.com/kodie/growfield</a></p>
+      </div>
+    </div>
+
+    <div id="main">
+      <div class="container">
+        <textarea class="growfield" placeholder="Type something in me and watch me grow!"></textarea>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">&copy; 2023 <a href="https://kodieg.com" target="_blank">Kodie Grantham</a></span>
+      </div>
+    </footer>
+  </body>
+</html>
